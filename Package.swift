@@ -4,8 +4,8 @@ import PackageDescription
 let package = Package(
     name: "AFOAuth2Manager",
     platforms: [
-        .iOS(.v7),
-        .macOS(.v10_9),
+        .iOS(.v9),
+        .macOS(.v10_10),
         .tvOS(.v9),
         .watchOS(.v2)
     ],
