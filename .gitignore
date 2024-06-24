@@ -30,3 +30,6 @@ xcuserdata
 fastlane/test-output/*
 fastlane/report.xml
 
+## SPM
+.swiftpm
+
