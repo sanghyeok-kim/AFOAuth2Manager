@@ -12,7 +12,7 @@ let package = Package(
             targets: ["AFOAuth2Manager"]),
     ],
     dependencies: [
-        .package(name: "AFNetworking", url: "https://github.com/AFNetworking/AFNetworking.git", from: "4.0.0"),
+        .package(name: "AFNetworking", url: "https://github.com/sanghyeok-kim/AFNetworking.git", from: "4.0.0"),
     ],
     targets: [
         .target(
@@ -20,13 +20,7 @@ let package = Package(
             dependencies: [
                 .product(name: "AFNetworking", package: "AFNetworking")
             ],
-            path: "AFOAuth2Manager",
-            exclude: [],
-            resources: [],
-            cSettings: [],
-            linkerSettings: [
-                .linkedFramework("Security")
-            ]
+            path: "AFOAuth2Manager"
         )
     ]
 )
