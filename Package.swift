@@ -4,10 +4,7 @@ import PackageDescription
 let package = Package(
     name: "AFOAuth2Manager",
     platforms: [
-        .iOS(.v9),
-        .macOS(.v10_10),
-        .tvOS(.v9),
-        .watchOS(.v2)
+        .iOS(.v9)
     ],
     products: [
         .library(
@@ -15,7 +12,7 @@ let package = Package(
             targets: ["AFOAuth2Manager"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/AFNetworking/AFNetworking.git", .upToNextMajor(from: "4.0.0")),
+        .package(name: "AFNetworking", url: "https://github.com/AFNetworking/AFNetworking.git", from: "4.0.0"),
     ],
     targets: [
         .target(
@@ -26,9 +23,9 @@ let package = Package(
             path: "AFOAuth2Manager",
             exclude: [],
             resources: [],
-            publicHeadersPath: ".",
-            cSettings: [
-                .headerSearchPath(".")
+            cSettings: [],
+            linkerSettings: [
+                .linkedFramework("Security")
             ]
         )
     ]
