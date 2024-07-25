@@ -20,10 +20,7 @@ let package = Package(
             dependencies: [
                 .product(name: "AFNetworking", package: "AFNetworking")
             ],
-            path: "AFOAuth2Manager",
-            linkerSettings: [
-                .linkedFramework("Security")
-            ]
+            path: "AFOAuth2Manager"
         )
     ]
 )
