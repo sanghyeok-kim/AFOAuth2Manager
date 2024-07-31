@@ -14,10 +14,9 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            name: "AFNetworking",
             url: "https://github.com/sanghyeok-kim/AFNetworking-SPM.git",
-            from: "4.0.0"
-        ),
+            .branch("master")
+        )
     ],
     targets: [
         .target(
