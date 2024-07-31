@@ -26,6 +26,7 @@ let package = Package(
                 .product(name: "AFNetworking", package: "AFNetworking-SPM")
             ],
             path: "AFOAuth2Manager",
+            publicHeadersPath: "",
             linkerSettings: [
                 .linkedFramework("Security")
             ]
