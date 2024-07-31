@@ -27,6 +27,9 @@ let package = Package(
             ],
             path: "AFOAuth2Manager",
             publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath(".")
+            ],
             linkerSettings: [
                 .linkedFramework("Security")
             ]
