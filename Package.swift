@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            name: "AFNetworking-SPM",
+            name: "AFNetworking",
             url: "https://github.com/sanghyeok-kim/AFNetworking-SPM.git",
             .branch("master")
         )
@@ -23,7 +23,7 @@ let package = Package(
         .target(
             name: "AFOAuth2Manager",
             dependencies: [
-                .product(name: "AFNetworking", package: "AFNetworking-SPM")
+                .product(name: "AFNetworking", package: "AFNetworking")
             ],
             path: "AFOAuth2Manager",
             publicHeadersPath: "include",
