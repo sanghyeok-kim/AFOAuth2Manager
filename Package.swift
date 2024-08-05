@@ -26,7 +26,7 @@ let package = Package(
                 .product(name: "AFNetworking", package: "AFNetworking")
             ],
             path: "AFOAuth2Manager",
-            publicHeadersPath: "include",
+//            publicHeadersPath: "include",
 //            cSettings: [
 //                .headerSearchPath(".")
 //            ],
